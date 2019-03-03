@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.d740209676e6c20e18aa7752bd931ff4.js"
+  "/precache-manifest.dbe17d298db5ddb8d6bf5a05aedb802c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "gccc-site"});
