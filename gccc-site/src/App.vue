@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Here is willing to be GCCC page."/>
+    <Header/>
+    <MainContent/>
+    <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import MainContent from "./components/MainContent.vue";
 
 @Component({
   components: {
-    HelloWorld
+    Header,
+    Footer,
+    MainContent
   }
 })
 export default class App extends Vue {}
@@ -19,11 +25,18 @@ export default class App extends Vue {}
 
 <style>
 #app {
+  box-sizing: border-box;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
