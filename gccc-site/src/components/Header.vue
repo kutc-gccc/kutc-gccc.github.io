@@ -6,8 +6,8 @@
       </section>
       <section class="links">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">News</a>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
       </section>
     </section>
     <main>
@@ -28,8 +28,8 @@ import Button from "./button/Button.vue";
 
 @Component({
   components: {
-    Button
-  }
+    Button,
+  },
 })
 export default class Header extends Vue {}
 </script>
@@ -52,12 +52,13 @@ header {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  height: 6vh;
   width: 100%;
 }
 
 h2 {
   color: #eef;
-  font-size: 48px;
+  font-size: 44px;
   padding: 0;
   margin: 0 24px;
 }
