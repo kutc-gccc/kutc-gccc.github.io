@@ -1,6 +1,10 @@
 <template>
   <footer>
-    <p>Footer here</p>
+    <main>
+      <p>Footer will place here</p>
+    </main>
+    <section id="bottom-nav">
+    </section>
   </footer>
 </template>
 
@@ -13,4 +17,9 @@ export default class Footer extends Vue {}
 
 
 <style scope>
+#bottom-nav {
+  height: 5vh;
+  width: 100%;
+  background-color:royalblue;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section id="news">
     <h2>News</h2>
-    <p>News component</p>
+    <p>Comming soon...</p>
   </section>
 </template>
 
@@ -13,4 +13,7 @@ export default class News extends Vue {}
 </script>
 
 <style scope>
+#news {
+  border-bottom: solid thin gray;
+}
 </style>

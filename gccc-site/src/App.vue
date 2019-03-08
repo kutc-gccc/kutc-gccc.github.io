@@ -17,8 +17,8 @@ import MainContent from "./components/MainContent.vue";
   components: {
     Header,
     Footer,
-    MainContent
-  }
+    MainContent,
+  },
 })
 export default class App extends Vue {}
 </script>

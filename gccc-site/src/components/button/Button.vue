@@ -1,5 +1,5 @@
 <template>
-  <a class="btn btn-icon btn-twitter" href="https://twitter.com/gcccinfo">
+  <a class="btn btn-icon btn-twitter" href="https://twitter.com/gcccinfo" target="_blank">
     <i class="fab fa-twitter"></i>
     <span>Twitter</span>
   </a>
@@ -14,7 +14,7 @@ export default class Button extends Vue {
   @Prop() private snsType!: string;
   @Prop() private linkHref!: string;
   @Prop() private buttonClass!: string;
-  created() {
+  public created() {
     const prefix: string = "fab fa-";
     this.buttonClass = prefix + this.snsType.toLowerCase();
   }
