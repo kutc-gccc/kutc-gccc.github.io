@@ -14,7 +14,7 @@ export default class Button extends Vue {
   @Prop() private snsType!: string;
   @Prop() private linkHref!: string;
   @Prop() private buttonClass!: string;
-  created() {
+  public created() {
     const prefix: string = "fab fa-";
     this.buttonClass = prefix + this.snsType.toLowerCase();
   }

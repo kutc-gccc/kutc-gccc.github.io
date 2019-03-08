@@ -22,8 +22,8 @@ import TwitterBar from "./maincontents/TwitterBar.vue";
   components: {
     About,
     News,
-    TwitterBar
-  }
+    TwitterBar,
+  },
 })
 export default class MainContent extends Vue {}
 </script>

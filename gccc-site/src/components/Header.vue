@@ -28,8 +28,8 @@ import Button from "./button/Button.vue";
 
 @Component({
   components: {
-    Button
-  }
+    Button,
+  },
 })
 export default class Header extends Vue {}
 </script>
