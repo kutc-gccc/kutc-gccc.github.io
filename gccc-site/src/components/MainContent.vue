@@ -33,17 +33,21 @@ export default class MainContent extends Vue {}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 16px 32px;
+  margin: 1em 1em;
 }
 
 #main-content .left-container {
   width: 75%;
+  border-right: solid thin #ddd;
+  padding: 1em;
+  
 }
 
 #main-content .right-container {
   width: 25%;
   padding: 0 8px;
 }
+
 </style>
 
 

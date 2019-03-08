@@ -1,5 +1,5 @@
 <template>
-  <a class="btn btn-icon btn-twitter" href="https://twitter.com/gcccinfo">
+  <a class="btn btn-icon btn-twitter" href="https://twitter.com/gcccinfo" target="_blank">
     <i class="fab fa-twitter"></i>
     <span>Twitter</span>
   </a>
