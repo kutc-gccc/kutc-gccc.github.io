@@ -1,21 +1,31 @@
 <template>
   <section id="twitter-bar">
-    <a
-      class="twitter-timeline"
-      data-width="320"
-      data-height="960"
-      data-theme="light"
-      data-link-color="#9266CC"
-      href="https://twitter.com/GCCCinfo?ref_src=twsrc%5Etfw"
-    >Tweets by GCCCinfo</a>
+    <Timeline
+      :id="id"
+      :sourceType="sourceType"
+      :options="{ tweetLimit }"/>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { Tweet, Moment, Timeline } from "vue-tweet-embed";
 
-@Component
-export default class TwitterBar extends Vue {}
+
+
+@Component({
+  components: {
+    Timeline,
+  },
+})
+export default class TwitterBar extends Vue {
+  @Prop() private twitterId!: string;
+  @Prop() private profile!: string;
+  @Prop() private tweetLimit!: number;
+  public id: string = this.twitterId;
+  public sourceType: string = this.profile;
+  public limit: number = this.tweetLimit;
+}
 </script>
 
 <style scope>
