@@ -11,13 +11,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Button extends Vue {
-  @Prop() private snsType!: string;
-  @Prop() private linkHref!: string;
-  @Prop() private buttonClass!: string;
-  public created() {
-    const prefix: string = "fab fa-";
-    this.buttonClass = prefix + this.snsType.toLowerCase();
-  }
 }
 </script>
 
