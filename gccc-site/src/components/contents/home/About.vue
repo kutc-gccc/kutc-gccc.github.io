@@ -19,7 +19,6 @@ export default class About extends Vue {}
 
 <style scope>
 #about {
-  padding-top: 5vh;
   border-bottom: solid thin gray;
 }
 </style>

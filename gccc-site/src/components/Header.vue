@@ -1,23 +1,13 @@
 <template>
   <header>
-    <section id="top-nav">
-      <section class="logo">
-        <h2>GCCC</h2>
-      </section>
-      <section class="links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-      </section>
+    <section class="logo">
+      <h2>GCCC</h2>
     </section>
-    <main>
-      <h1>Make a Game
-        <br>Make Yourself.
-      </h1>
-      <p>Game Creation Circle C</p>
-      <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
-      <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
-    </main>
+    <section class="links">
+      <router-link to="/">Home</router-link>
+      <router-link to="/news">News</router-link>
+      <router-link to="/works">Works</router-link>
+    </section>
   </header>
 </template>
 
@@ -37,21 +27,17 @@ export default class Header extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  background-image: url("../assets/header-logo.png");
-  background-size: cover;
 
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
 }
 
-#top-nav {
+header {
   background-color: rgba(10, 20, 20, 0.8);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   height: 6vh;
   width: 100%;
 }
@@ -63,7 +49,7 @@ h2 {
   margin: 0 24px;
 }
 
-.links a {
+.links router-link, a {
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-decoration: none;
@@ -74,7 +60,6 @@ h2 {
 
 main {
   height: 100%;
-  background-color: rgba(10, 20, 20, 0.45);
   display: flex;
   flex-direction: column;
   align-items: center;

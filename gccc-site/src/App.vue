@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <Header/>
-    <MainContent/>
+    <div class="header-padding"/>
+    <router-view/>
     <Footer/>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
-import MainContent from "./components/MainContent.vue";
+import { Component, Prop, Vue } from "vue-property-decorator";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Header,
     Footer,
-    MainContent,
   },
 })
 export default class App extends Vue {}
@@ -38,5 +36,9 @@ export default class App extends Vue {}
 body {
   padding: 0;
   margin: 0;
+}
+
+.header-padding {
+  height: 6vh;
 }
 </style>
