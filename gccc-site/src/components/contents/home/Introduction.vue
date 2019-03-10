@@ -4,7 +4,7 @@
       <h1>Make a Game
       <br>Make Yourself.
       </h1>
-      <p>Game Creation Circle C</p>
+      <p>Game Creation Circle "C"</p>
       <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
       <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
     </section>
@@ -35,13 +35,15 @@ export default class Introduction extends Vue {}
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
+  transition: all 0.5s ease;
   h1 {
     color: #eef;
     font-size: 84px;
     padding: 0;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 20px;
+    transition: all 0.5 ease;
   }
   p {
     color: #eee;

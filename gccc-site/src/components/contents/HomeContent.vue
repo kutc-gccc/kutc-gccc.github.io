@@ -43,18 +43,38 @@ export default class HomeContent extends Vue {}
   }
 
   .bottom-content {
-    margin: 1em 1em;
+    margin: 0.5em 6em;
     display: flex;
     flex-direction: row;
     .left-container {
-      width: 75%;
+      width: 70%;
       border-right: solid thin #ddd;
+      display: flex;
+      flex-direction: column;
       padding: 1em;
     }
     .right-container {
-      width: 25%;
+      width: 30%;
       padding: 0 8px;
     }
+  }
+}
+</style>
+
+<style lang="scss">
+.bottom-content {
+  h2 {
+    font-size: 2.2em;
+    color: #77e;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  .left-container {
+    text-align: start;
   }
 }
 </style>
