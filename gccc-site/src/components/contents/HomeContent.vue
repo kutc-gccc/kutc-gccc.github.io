@@ -9,7 +9,7 @@
         <News/>
       </section>
       <section class="right-container">
-        <TwitterBar/>
+        <TwitterBar twitterId="GCCCinfo" profile="profile" tweetLimit=5></TwitterBar>
       </section>
     </section>
   </section>
