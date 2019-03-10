@@ -21,7 +21,7 @@ import Footer from "@/components/Footer.vue";
 export default class App extends Vue {}
 </script>
 
-<style>
+<style lang="scss">
 #app {
   box-sizing: border-box;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
