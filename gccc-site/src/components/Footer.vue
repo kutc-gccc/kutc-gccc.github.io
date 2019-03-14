@@ -4,6 +4,7 @@
       <p>Footer will place here</p>
     </main>
     <section id="bottom-nav">
+      <small>&copy; GCCC all rights reserved.</small>
     </section>
   </footer>
 </template>
@@ -16,10 +17,18 @@ export default class Footer extends Vue {}
 </script>
 
 
-<style scope>
+<style lang="scss" scope>
+main {
+  height: 15vh;
+  background-color: #ffe;
+}
 #bottom-nav {
   height: 5vh;
   width: 100%;
   background-color:royalblue;
+  small {
+    color: white;
+    margin-top: 1em;
+  }
 }
 </style>

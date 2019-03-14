@@ -22,9 +22,9 @@ export default class TwitterBar extends Vue {
   @Prop() private twitterId!: string;
   @Prop() private profile!: string;
   @Prop() private tweetLimit!: number;
-  public id: string = this.twitterId;
-  public sourceType: string = this.profile;
-  public limit: number = this.tweetLimit;
+  private id: string = this.twitterId;
+  private sourceType: string = this.profile;
+  private limit: number = this.tweetLimit;
 }
 </script>
 
