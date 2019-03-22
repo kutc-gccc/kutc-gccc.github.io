@@ -64,14 +64,28 @@ export default class HomeContent extends Vue {}
 <style lang="scss">
 .bottom-content {
   h2 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: #77e;
+    border-bottom: 1px solid #696;
+    border-left: 8px solid #999;
+    border-radius: 8px;
+    padding-left: 16px;
   }
   h3 {
-    font-size: 1.7em;
+    font-size: 1.9em;
+    border-bottom: 1px dashed #242;
+    padding-left: 4px;
   }
   h4 {
-    font-size: 1.3em;
+    font-size: 1.5em;
+    padding-left: 8px;
+  }
+  h5 {
+    font-size: 1.2em;
+    padding-left: 12px;
+  }
+  p {
+    padding-left: 1em;
   }
   .left-container {
     text-align: start;
