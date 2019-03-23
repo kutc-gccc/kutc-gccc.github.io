@@ -1,30 +1,20 @@
 <template>
   <header>
-    <section id="top-nav">
-      <section class="logo">
-        <h2>GCCC</h2>
-      </section>
-      <section class="links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-      </section>
+    <section class="logo">
+      <router-link to="/"><h2>GCCC</h2></router-link>
     </section>
-    <main>
-      <h1>Make a Game
-        <br>Make Yourself.
-      </h1>
-      <p>Game Creation Circle C</p>
-      <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
-      <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
-    </main>
+    <section class="links">
+      <router-link to="/">Home</router-link>
+      <router-link to="/news">News</router-link>
+      <router-link to="/works">Works</router-link>
+    </section>
   </header>
 </template>
 
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Button from "./button/Button.vue";
+import Button from "./parts/Button.vue";
 
 @Component({
   components: {
@@ -35,62 +25,67 @@ export default class Header extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 header {
-  background-image: url("../assets/header-logo.png");
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-}
-
-#top-nav {
-  background-color: rgba(10, 20, 20, 0.8);
+  background-color: rgba(10, 20, 20, 0.90);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   height: 6vh;
   width: 100%;
 }
 
-h2 {
-  color: #eef;
-  font-size: 44px;
-  padding: 0;
-  margin: 0 24px;
+.logo {
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    color: #eef;
+    font-size: 44px;
+    padding: 0;
+    margin: 0 24px;
+  }
 }
 
-.links a {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  text-decoration: none;
-  border-bottom: solid thin #fff;
-  margin: 0 8px;
-  padding: 0 2px;
+
+.links {
+  margin-right: 16px;
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: solid thin #fff;
+    margin: 0 8px;
+    padding: 0 4px;
+
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: #e77;
+    border-bottom: solid medium #e77;
+    border-radius: 24px;
+  }
 }
 
 main {
   height: 100%;
-  background-color: rgba(10, 20, 20, 0.45);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-main h1 {
-  color: #fff;
-  font-size: 84px;
-  padding: 0;
-  margin: 0;
-  padding: 0;
-  margin-top: 10%;
-}
-
-main p {
-  color: #eee;
-  font-size: 24px;
+  h1 {
+    color: #fff;
+    font-size: 84px;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+  p {
+    color: #eee;
+    font-size: 24px;
+  }
 }
 </style>
