@@ -1,11 +1,11 @@
 <template>
   <section class="bg">
     <section id="introduction">
-      <h1>Make a Game
-      <br>Make Yourself.
+      <h1>
+      <br>
       </h1>
       <p>Game Creation Circle "C"</p>
-      <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
+      <p>プログラミング / グラフィック / 音楽 / シナリオ</p>
       <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
     </section>
   </section>
@@ -26,7 +26,7 @@ export default class Introduction extends Vue {}
 
 <style lang="scss" scoped>
 .bg {
-  background-image: url("../../../assets/header-logo.png");
+  background-image: url("../../../assets/header-background.jpg");
   background-size: cover;
 }
 
