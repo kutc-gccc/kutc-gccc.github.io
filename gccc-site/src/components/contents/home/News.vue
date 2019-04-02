@@ -15,6 +15,5 @@ export default class News extends Vue {}
 <style scope>
 #news {
   border-bottom: solid thin gray;
-  padding-left: 32px;
 }
 </style>
