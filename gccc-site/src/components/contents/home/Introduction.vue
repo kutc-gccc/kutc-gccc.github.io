@@ -26,7 +26,7 @@ export default class Introduction extends Vue {}
 
 <style lang="scss" scoped>
 .bg {
-  background-image: url("../../../assets/header-logo.png");
+  background-image: url("../../../assets/header-background.jpg");
   background-size: cover;
 }
 
