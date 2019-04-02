@@ -35,7 +35,7 @@ header {
   position: fixed;
   top: 0;
   height: 6vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo {
@@ -44,18 +44,17 @@ header {
   }
   h2 {
     color: #eef;
-    font-size: 44px;
+    font-size: 4vh;
     padding: 0;
-    margin: 0 24px;
+    margin: 0 1vh;
   }
 }
 
 
 .links {
-  margin-right: 16px;
   a {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 3vh;
     text-decoration: none;
     border-bottom: solid thin #fff;
     margin: 0 8px;

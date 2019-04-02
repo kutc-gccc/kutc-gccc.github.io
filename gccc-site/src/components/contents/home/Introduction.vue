@@ -34,6 +34,7 @@ export default class Introduction extends Vue {}
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   height: 70vh;
   transition: all 0.5s ease;
   h1 {
@@ -45,6 +46,8 @@ export default class Introduction extends Vue {}
     transition: all 0.5 ease;
   }
   p {
+    margin: 0;
+    padding: 0;
     color: #eee;
     font-size: 24px;
   }
