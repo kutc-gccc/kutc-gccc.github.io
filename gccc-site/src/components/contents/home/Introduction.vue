@@ -1,8 +1,7 @@
 <template>
   <section class="bg">
     <section id="introduction">
-      <h1>
-      <br>
+      <h1>ゲーム、作ろう！
       </h1>
       <p>Game Creation Circle "C"</p>
       <p>プログラミング / グラフィック / 音楽 / シナリオ</p>
