@@ -1,9 +1,7 @@
 <template>
   <section class="bg">
     <section id="introduction">
-      <h1>Make a Game
-      <br>Make Yourself.
-      </h1>
+      <h1>ゲーム、作ろう！</h1>
       <p>Game Creation Circle "C"</p>
       <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
       <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
@@ -35,6 +33,7 @@ export default class Introduction extends Vue {}
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   height: 70vh;
   transition: all 0.5s ease;
   h1 {
@@ -46,6 +45,8 @@ export default class Introduction extends Vue {}
     transition: all 0.5 ease;
   }
   p {
+    margin: 0;
+    padding: 0;
     color: #eee;
     font-size: 24px;
   }

@@ -39,6 +39,5 @@ export default class About extends Vue {}
 <style lang="scss" scope>
 #about {
   border-bottom: solid thin gray;
-  padding-left: 32px;
 }
 </style>

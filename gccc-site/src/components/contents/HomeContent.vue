@@ -43,11 +43,19 @@ export default class HomeContent extends Vue {}
   }
 
   .bottom-content {
-    margin: 0.5em 6em;
+    margin: 0;
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     .left-container {
-      width: 70%;
+      width: 100%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 0;
+      }
       border-right: solid thin #ddd;
       display: flex;
       flex-direction: column;
