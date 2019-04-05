@@ -5,6 +5,9 @@
       関西大学総合情報学部のゲーム制作サークル「GameCreationCircle"C"」(GCCC)の公式サイトへようこそ！
       当サイトでは、サークルの概要や制作物、活動予定などを発信しています！
     </p>
+    <p><strong>
+      ガイダンスはB棟の地下1階,TEB1の教室でやっています！！興味があったらぜひ来てください！
+    </strong></p>
     <h3>活動紹介</h3>
     <h4>講習</h4>
     <p>
@@ -39,6 +42,5 @@ export default class About extends Vue {}
 <style lang="scss" scope>
 #about {
   border-bottom: solid thin gray;
-  padding-left: 32px;
 }
 </style>
