@@ -1,10 +1,9 @@
 <template>
   <section class="bg">
     <section id="introduction">
-      <h1>ゲーム、作ろう！
-      </h1>
+      <h1>ゲーム、作ろう！</h1>
       <p>Game Creation Circle "C"</p>
-      <p>プログラミング / グラフィック / 音楽 / シナリオ</p>
+      <p>Unity / UnrealEngine / Siv3D / DxLib / Tyrano Builder</p>
       <Button linkHref="https://twitter.com/gcccinfo" snsType="Twitter"/>
     </section>
   </section>
